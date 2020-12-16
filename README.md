@@ -16,3 +16,5 @@ To install the latest version of the package from GitHub:
 library(devtools)
 devtools::install_github("ybai69/TBFL-ChangePointDetection")
 ```
+
+For more information about the R package, see the manual [TBFLChangePointDetection_0.1.0.pdf](TBFLChangePointDetection_0.1.0.pdf). 
