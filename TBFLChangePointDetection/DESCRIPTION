@@ -1,0 +1,31 @@
+Package: TBFLChangePointDetection
+Type: Package
+Title: Change point detection in high-dimensional linear regression models
+Version: 0.1.0
+Authors@R: c(
+	person("Yue", "Bai", email = "baiyue@ufl.edu", role = c("aut", "cre")),
+	person("Abolfazl", "Safikhani", email = "a.safikhani@ufl.edu", role = c("aut")))
+Maintainer: Yue Bai <baiyue@ufl.edu>
+Description: Change point detection in high-dimensional linear regression models.
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+	stats,
+	graphics,
+	mvtnorm,
+	factoextra,
+	Rcpp,
+	RcppArmadillo,
+	lattice,
+	xtable,
+	ggplot2,
+	glmnet,
+	sparsevar
+LinkingTo: 
+	Rcpp,
+    	RcppArmadillo
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
