@@ -17,4 +17,3 @@ library(devtools)
 devtools::install_github("ybai69/LinearDetect")
 ```
 
-For more information about the R package, see the manual [TBFLChangePointDetection_0.1.0.pdf](TBFLChangePointDetection_0.1.0.pdf). 
