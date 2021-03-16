@@ -7,27 +7,27 @@
 #' @param lambda threshold parameter  
 #' @return thresholded matrix L
 soft_full <- function(L, lambda) {
-    .Call(`_TBFLChangePointDetection_soft_full`, L, lambda)
+    .Call(`_LinearDetect_soft_full`, L, lambda)
 }
 
 lm_break_fit_block <- function(data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index) {
-    .Call(`_TBFLChangePointDetection_lm_break_fit_block`, data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index)
+    .Call(`_LinearDetect_lm_break_fit_block`, data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index)
 }
 
 lm_break_fit_block_new <- function(data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index) {
-    .Call(`_TBFLChangePointDetection_lm_break_fit_block_new`, data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index)
+    .Call(`_LinearDetect_lm_break_fit_block_new`, data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index)
 }
 
 ggm_break_fit_block <- function(data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index) {
-    .Call(`_TBFLChangePointDetection_ggm_break_fit_block`, data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index)
+    .Call(`_LinearDetect_ggm_break_fit_block`, data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, blocks, cv_index)
 }
 
 lm_partial_break_fit_block <- function(data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, initial_phi_2, blocks, cv_index, fixed_index, nonfixed_index) {
-    .Call(`_TBFLChangePointDetection_lm_partial_break_fit_block`, data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, initial_phi_2, blocks, cv_index, fixed_index, nonfixed_index)
+    .Call(`_LinearDetect_lm_partial_break_fit_block`, data_y, data_x, lambda, lambda2, max_iteration, tol, initial_phi, initial_phi_2, blocks, cv_index, fixed_index, nonfixed_index)
 }
 
 var_break_fit_block <- function(data, lambda, lambda2, q, max_iteration, tol, initial_phi, blocks, cv_index) {
-    .Call(`_TBFLChangePointDetection_var_break_fit_block`, data, lambda, lambda2, q, max_iteration, tol, initial_phi, blocks, cv_index)
+    .Call(`_LinearDetect_var_break_fit_block`, data, lambda, lambda2, q, max_iteration, tol, initial_phi, blocks, cv_index)
 }
 
 #' lambda warm up for linear regression model
@@ -38,10 +38,10 @@ var_break_fit_block <- function(data, lambda, lambda2, q, max_iteration, tol, in
 #' @param cv_index the vector of indices for validation
 #' @return a value for parameter lambda
 lambda_warm_up_lm <- function(data_y, data_x, blocks, cv_index) {
-    .Call(`_TBFLChangePointDetection_lambda_warm_up_lm`, data_y, data_x, blocks, cv_index)
+    .Call(`_LinearDetect_lambda_warm_up_lm`, data_y, data_x, blocks, cv_index)
 }
 
 lambda_warm_up_var <- function(data, q, blocks, cv_index) {
-    .Call(`_TBFLChangePointDetection_lambda_warm_up_var`, data, q, blocks, cv_index)
+    .Call(`_LinearDetect_lambda_warm_up_var`, data, q, blocks, cv_index)
 }
 

@@ -1,13 +1,12 @@
-Package: TBFLChangePointDetection
+Package: LinearDetect
 Type: Package
-Title: Change point detection in high-dimensional linear regression models
-Version: 0.1.0
-Authors@R: c(
-	person("Yue", "Bai", email = "baiyue@ufl.edu", role = c("aut", "cre")),
+Title: Change Point Detection in High-Dimensional Linear Regression Models
+Version: 0.1.3
+Author: Yue Bai [aut, cre], Abolfazl Safikhani [aut] 
+Authors@R: c(person("Yue", "Bai", email = "baiyue@ufl.edu", role = c("aut", "cre")),
 	person("Abolfazl", "Safikhani", email = "a.safikhani@ufl.edu", role = c("aut")))
 Maintainer: Yue Bai <baiyue@ufl.edu>
-Description: Change point detection in high-dimensional linear regression models.
-    Use four spaces when indenting paragraphs within the Description.
+Description: A unified framework for simultaneous structural break detection and parameter estimation in high-dimensional linear models. The proposed method can handle a wide range of models, including change-in-mean model, multiple linear regression model, Vector auto-regressive model and Gaussian graphical model.
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
@@ -17,7 +16,6 @@ Imports:
 	mvtnorm,
 	factoextra,
 	Rcpp,
-	RcppArmadillo,
 	lattice,
 	xtable,
 	ggplot2,
@@ -28,4 +26,4 @@ LinkingTo:
     	RcppArmadillo
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.1

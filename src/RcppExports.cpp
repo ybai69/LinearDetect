@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // soft_full
 arma::mat soft_full(arma::mat L, double lambda);
-RcppExport SEXP _TBFLChangePointDetection_soft_full(SEXP LSEXP, SEXP lambdaSEXP) {
+RcppExport SEXP _LinearDetect_soft_full(SEXP LSEXP, SEXP lambdaSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -20,7 +20,7 @@ END_RCPP
 }
 // lm_break_fit_block
 List lm_break_fit_block(NumericMatrix data_y, NumericMatrix data_x, double lambda, double lambda2, int max_iteration, double tol, NumericMatrix initial_phi, NumericVector blocks, NumericVector cv_index);
-RcppExport SEXP _TBFLChangePointDetection_lm_break_fit_block(SEXP data_ySEXP, SEXP data_xSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
+RcppExport SEXP _LinearDetect_lm_break_fit_block(SEXP data_ySEXP, SEXP data_xSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -39,7 +39,7 @@ END_RCPP
 }
 // lm_break_fit_block_new
 arma::mat lm_break_fit_block_new(arma::mat data_y, arma::mat data_x, double lambda, double lambda2, int max_iteration, double tol, NumericMatrix initial_phi, NumericVector blocks, NumericVector cv_index);
-RcppExport SEXP _TBFLChangePointDetection_lm_break_fit_block_new(SEXP data_ySEXP, SEXP data_xSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
+RcppExport SEXP _LinearDetect_lm_break_fit_block_new(SEXP data_ySEXP, SEXP data_xSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -58,7 +58,7 @@ END_RCPP
 }
 // ggm_break_fit_block
 List ggm_break_fit_block(NumericMatrix data_y, NumericMatrix data_x, double lambda, double lambda2, int max_iteration, double tol, NumericMatrix initial_phi, NumericVector blocks, NumericVector cv_index);
-RcppExport SEXP _TBFLChangePointDetection_ggm_break_fit_block(SEXP data_ySEXP, SEXP data_xSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
+RcppExport SEXP _LinearDetect_ggm_break_fit_block(SEXP data_ySEXP, SEXP data_xSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -77,7 +77,7 @@ END_RCPP
 }
 // lm_partial_break_fit_block
 List lm_partial_break_fit_block(NumericMatrix data_y, NumericMatrix data_x, double lambda, double lambda2, int max_iteration, double tol, NumericMatrix initial_phi, NumericMatrix initial_phi_2, NumericVector blocks, NumericVector cv_index, arma::uvec fixed_index, arma::uvec nonfixed_index);
-RcppExport SEXP _TBFLChangePointDetection_lm_partial_break_fit_block(SEXP data_ySEXP, SEXP data_xSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP initial_phi_2SEXP, SEXP blocksSEXP, SEXP cv_indexSEXP, SEXP fixed_indexSEXP, SEXP nonfixed_indexSEXP) {
+RcppExport SEXP _LinearDetect_lm_partial_break_fit_block(SEXP data_ySEXP, SEXP data_xSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP initial_phi_2SEXP, SEXP blocksSEXP, SEXP cv_indexSEXP, SEXP fixed_indexSEXP, SEXP nonfixed_indexSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -99,7 +99,7 @@ END_RCPP
 }
 // var_break_fit_block
 List var_break_fit_block(NumericMatrix data, double lambda, double lambda2, int q, int max_iteration, double tol, NumericMatrix initial_phi, NumericVector blocks, NumericVector cv_index);
-RcppExport SEXP _TBFLChangePointDetection_var_break_fit_block(SEXP dataSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP qSEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
+RcppExport SEXP _LinearDetect_var_break_fit_block(SEXP dataSEXP, SEXP lambdaSEXP, SEXP lambda2SEXP, SEXP qSEXP, SEXP max_iterationSEXP, SEXP tolSEXP, SEXP initial_phiSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -118,7 +118,7 @@ END_RCPP
 }
 // lambda_warm_up_lm
 List lambda_warm_up_lm(NumericMatrix data_y, NumericMatrix data_x, NumericVector blocks, NumericVector cv_index);
-RcppExport SEXP _TBFLChangePointDetection_lambda_warm_up_lm(SEXP data_ySEXP, SEXP data_xSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
+RcppExport SEXP _LinearDetect_lambda_warm_up_lm(SEXP data_ySEXP, SEXP data_xSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -132,7 +132,7 @@ END_RCPP
 }
 // lambda_warm_up_var
 List lambda_warm_up_var(NumericMatrix data, int q, NumericVector blocks, NumericVector cv_index);
-RcppExport SEXP _TBFLChangePointDetection_lambda_warm_up_var(SEXP dataSEXP, SEXP qSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
+RcppExport SEXP _LinearDetect_lambda_warm_up_var(SEXP dataSEXP, SEXP qSEXP, SEXP blocksSEXP, SEXP cv_indexSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -146,18 +146,18 @@ END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_TBFLChangePointDetection_soft_full", (DL_FUNC) &_TBFLChangePointDetection_soft_full, 2},
-    {"_TBFLChangePointDetection_lm_break_fit_block", (DL_FUNC) &_TBFLChangePointDetection_lm_break_fit_block, 9},
-    {"_TBFLChangePointDetection_lm_break_fit_block_new", (DL_FUNC) &_TBFLChangePointDetection_lm_break_fit_block_new, 9},
-    {"_TBFLChangePointDetection_ggm_break_fit_block", (DL_FUNC) &_TBFLChangePointDetection_ggm_break_fit_block, 9},
-    {"_TBFLChangePointDetection_lm_partial_break_fit_block", (DL_FUNC) &_TBFLChangePointDetection_lm_partial_break_fit_block, 12},
-    {"_TBFLChangePointDetection_var_break_fit_block", (DL_FUNC) &_TBFLChangePointDetection_var_break_fit_block, 9},
-    {"_TBFLChangePointDetection_lambda_warm_up_lm", (DL_FUNC) &_TBFLChangePointDetection_lambda_warm_up_lm, 4},
-    {"_TBFLChangePointDetection_lambda_warm_up_var", (DL_FUNC) &_TBFLChangePointDetection_lambda_warm_up_var, 4},
+    {"_LinearDetect_soft_full", (DL_FUNC) &_LinearDetect_soft_full, 2},
+    {"_LinearDetect_lm_break_fit_block", (DL_FUNC) &_LinearDetect_lm_break_fit_block, 9},
+    {"_LinearDetect_lm_break_fit_block_new", (DL_FUNC) &_LinearDetect_lm_break_fit_block_new, 9},
+    {"_LinearDetect_ggm_break_fit_block", (DL_FUNC) &_LinearDetect_ggm_break_fit_block, 9},
+    {"_LinearDetect_lm_partial_break_fit_block", (DL_FUNC) &_LinearDetect_lm_partial_break_fit_block, 12},
+    {"_LinearDetect_var_break_fit_block", (DL_FUNC) &_LinearDetect_var_break_fit_block, 9},
+    {"_LinearDetect_lambda_warm_up_lm", (DL_FUNC) &_LinearDetect_lambda_warm_up_lm, 4},
+    {"_LinearDetect_lambda_warm_up_var", (DL_FUNC) &_LinearDetect_lambda_warm_up_var, 4},
     {NULL, NULL, 0}
 };
 
-RcppExport void R_init_TBFLChangePointDetection(DllInfo *dll) {
+RcppExport void R_init_LinearDetect(DllInfo *dll) {
     R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
     R_useDynamicSymbols(dll, FALSE);
 }
