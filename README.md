@@ -23,3 +23,19 @@ library(devtools)
 devtools::install_github("ybai69/LinearDetect")
 ```
 
+
+To cite package 'LinearDetect' in publications use:
+
+  Yue Bai and Abolfazl Safikhani (2021). LinearDetect: Change Point Detection in High-Dimensional Linear Regression Models.
+  R package version 0.1.4. https://CRAN.R-project.org/package=LinearDetect
+
+A BibTeX entry for LaTeX users is
+
+  @Manual{,
+    title = {LinearDetect: Change Point Detection in High-Dimensional Linear Regression
+Models},
+    author = {Yue Bai and Abolfazl Safikhani},
+    year = {2021},
+    note = {R package version 0.1.4},
+    url = {https://CRAN.R-project.org/package=LinearDetect},
+  }
