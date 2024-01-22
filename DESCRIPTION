@@ -10,6 +10,7 @@ Description: A unified framework for simultaneous structural break detection and
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/ybai69/LinearDetect
 Imports:
 	stats,
 	graphics,
